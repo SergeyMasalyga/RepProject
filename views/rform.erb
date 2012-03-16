@@ -1,0 +1,19 @@
+<div class="contentform">
+<h2>Here you can create your new Repotr on project <%=@pr.title%>: </h2>
+<form action="/create/Record/<%=@pr.id%>" method="post" id="rform">
+<p><lable><h4>Reporting Time:</h4></lable></p>
+<select name="reporting_time">
+<option disabled>Choose...</option>
+<option value="Self-development">Self-development</option>
+<option value="Working time">Working time</option>
+<option value="Extra time">Extra time</option>
+<option value="Team work">Team work</option>
+</select>
+<p><lable><h4>Description:</h4></lable></p>
+<p><textarea rows="3" cols="40" name="description"> </textarea></p>
+<p><lable><h4>Spent Time:</h4></lable></p>
+<p><input type="text" name="spent_time">HH:MM <%=@message%></p>
+<p><input type="Submit" value="Save"></p>
+</form>
+</div>
+

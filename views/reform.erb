@@ -1,0 +1,11 @@
+<h2>Please choose the project: </h2>
+<form action="/catch/project" method="get" id="uform">
+<p><lable><h4>Project:</h4></lable></p>
+<select name="id_p">
+<option disabled>Choose...</option>
+<% @projects.each do |p| %>
+<option value="<%=p.id%>"><%=p.title%></option>
+<%end%>
+</select>
+<input type="Submit">
+</form>

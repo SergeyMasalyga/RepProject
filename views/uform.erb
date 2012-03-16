@@ -1,0 +1,17 @@
+<div class="contentform">
+<h2><%=@a%></h2>
+<h2>Here you can create your new User profile: </h2>
+<form action="/create/User" method="post" id="uform">
+<p><lable><h4>Login:</h4></lable></p>
+<p><input type="text" name="User[login]"></p>
+<p><lable><h4>Name:</h4></lable></p>
+<p><input type="text" name="User[name]"></p>
+<p><lable><h4>Password:</h4></lable></p>
+<p><input type="password" name="User[password]"></p>
+<p><lable><h4>Email:</h4></lable></p>
+<p><input type="email" name="User[email]"></p>
+<p><lable><h4>Position:</h4></lable></p>
+<p><input type="text" name="User[position]"></p>
+<p><input type="Submit" value="Save"></p>
+</form>
+</div>

@@ -1,0 +1,9 @@
+<%if @message%>
+<h2><%=@message%></h2>
+<%end%>
+<form action="/check" method="get">
+ <p><b>Login: </b><input type="text" name="login" value="newcomer"></p>
+ <p><b>Password: </b><input type="password" name="password"></p>
+ <p><input type="submit" value="Enter"></p>
+</form>
+
